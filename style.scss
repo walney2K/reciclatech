@@ -5,7 +5,7 @@
 }
 header{
     width: 100%;
-    background-color: greenyellow;
+    background-color: white;
     display: flex;//ativa as caixar flexiveis
     justify-content: flex-start;// E o padrão . os itens são postos no começo do eixo principal.
     justify-content: flex-end;// os itens são postos no final do eixo principal.
@@ -13,7 +13,7 @@ header{
     justify-content: space-around;//o primeiro espaço e o ultimo saõ iguais.
     //justify-content: space-evenly;// o mesmo espaçamento dos itens.
     //justify-content: space-between;// o primero item ficas no começodo eixo e o ultimo item no final do eixo
-    height: 20%;
+    height: 10%;
     align-items: flex-start;//os itens são posto do começo do eixo y(vertical)
     align-items: flex-end;//os itens são   posto final do eixo y (vertical)
     align-items: center;//os itens são posto no centro do eixo y (vertical)
@@ -32,3 +32,71 @@ a{
     font-size: 1.4rem;
     color: red;
 }
+//Primeira Section 
+.primeiraSection{
+  background-color: yellow;
+  height: 50vh;
+
+section{
+  border: solid;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+}
+.produtosdisponiveis {
+  background-color:  #F3F5F8;
+;
+;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+
+  article {
+    border:  red;
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    //  flex-direction: row; //Padrão (fileira). Os itens são organizados em forma de linha da esquerda para a direita.
+    // flex-direction: row-reverse; //Os itens são organizados em forma de linha (fileira) da direita para a esquerda.
+    flex-direction: column; //Os itens são organizados em coluna, de cima para baixo.
+    // flex-direction: column-reverse; //Os itens são organizados em forma de colunas iniciando de baixo para cima.
+
+    //justify-content: center;
+    //justify-content: space-evenly;
+    //justify-content: space-around;
+    justify-content: space-between;
+
+    align-items: center;
+    //align-items: flex-start;
+    //align-items: flex-end;
+
+    img {
+      width: 100%;
+      height: 30vh;
+      border: solid;
+    }
+
+    button {
+      width: 50%;
+      height: 7vh;
+      cursor: pointer;
+      //padding-top: 2rem;
+      //padding-left: 2rem;
+      margin-bottom: 1rem;
+      background-color: #16a34a;
+      color: #ffffff;
+      font-weight: 400;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  }
+}
+    
