@@ -6,48 +6,108 @@
 
 header {
   width: 100%;
-  background-color: white;
   display: flex;
-  justify-content: flex-start;
-  justify-content: flex-end;
-  justify-content: center;
   justify-content: space-around;
-  height: 10%;
+  height: 15vh;
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
 }
-header H1 {
-  border: solid;
+
+.caixalogo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+  align-items: center;
 }
-header nav {
-  border: solid blue;
+
+h1 {
+  border: solid white;
+}
+
+nav {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  font-size: 1.4rem;
-  color: red;
+  font-size: 1.5rem;
+  color: #4B5563;
+}
+
+.btnVerdeHeader {
+  background-color: #21C05C;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 6px;
 }
 
 .primeiraSection {
-  background-color: yellow;
-  height: 50vh;
+  border: solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
 }
 .primeiraSection section {
-  border: solid;
+  border: solid white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  width: 55%;
+  border: solid white;
+}
+.primeiraSection section p {
+  font-size: 1.25rem;
+  width: 50%;
+  border: solid blue;
+}
+
+.boxBtnsPrimeiraSection {
+  border: solid purple;
   width: 50%;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.boxBtnsPrimeiraSection button {
+  cursor: pointer;
+  padding: 30px 40px;
+}
 
-.produtosdisponiveis {
-  background-color: #F3F5F8;
+.dadosNumericos {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 25vh;
+}
+.dadosNumericos div {
+  border: solid;
+  width: 20%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dadosNumericos div h2 {
+  color: #16a34a;
+  font-size: 2.8rem;
+}
+
+.produtosDisponiveis {
+  background-color: rgb(203, 244, 230);
   height: 85vh;
   display: flex;
   justify-content: space-evenly;
@@ -57,8 +117,8 @@ a {
   align-items: flex-start;
   align-items: center;
 }
-.produtosdisponiveis article {
-  border: red;
+.produtosDisponiveis article {
+  border: solid white;
   width: 20%;
   height: 60vh;
   display: flex;
@@ -66,19 +126,92 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.produtosdisponiveis article img {
+.produtosDisponiveis article img {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   border: solid;
 }
-.produtosdisponiveis article button {
+.produtosDisponiveis article button {
   width: 50%;
-  height: 7vh;
+  height: 6vh;
   cursor: pointer;
   margin-bottom: 1rem;
   background-color: #16a34a;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 800;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixaLogo {
+    border: solid;
+    width: 50%;
+  }
+  nav {
+    border: solid;
+    width: 100%;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+  nav .btnVerdeHeader {
+    font-size: 0.8rem;
+  }
+  nav .produtosDisponiveis {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .produtosDisponiveis article {
+    width: 80%;
+    text-align: center;
+  }
+  nav .produtosDisponiveis article button {
+    font-size: 1rem;
+    width: 70%;
+    font-weight: 400;
+  }
+  .primeiraSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+  }
+  .primeiraSection section {
+    height: 70vh;
+    background-color: #16a34a;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .primeiraSection section p {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection button {
+    padding: 20px 30px;
+  }
+  .primeiraSection img {
+    width: 50%;
+  }
+  .dadosNumericos {
+    height: 25vh;
+  }
+  .dadosNumericos div {
+    width: 25%;
+  }
+  .dadosNumericos div h2 {
+    font-size: 1.8rem;
+  }
+  .dadosNumericos div P {
+    font-size: 0, 8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
